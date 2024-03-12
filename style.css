@@ -1,0 +1,137 @@
+body {
+    background-image: url("fondo_01.png");
+    background-color: #8ba9fd;
+    background-size: cover;
+    margin:1em;
+}
+
+div {
+    border-radius: 5px;
+}
+
+.main {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 4em;
+}
+.contenido {
+    display: flex;
+    justify-content: space-around;
+}
+
+textarea {
+    color: white;
+    width: 100%;
+    float: left;
+    min-height: 55px;
+    outline: none;
+    resize: none;
+    border: 3px solid rgb(0, 119, 255);
+    font-size: 2em;
+    border-radius: 20px;
+    padding: 0.5em;
+    max-height: 300px;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+}
+textarea::placeholder {
+    color: rgb(209, 248, 255);
+}
+#simbolo {
+    font-size:100px;
+    color:aquamarine
+}
+#aclaracion {
+    font-size: 1.5em;
+    color:white;
+    font-style: bold;
+    border-radius: 3px;
+    text-align: justify;
+
+}
+.botonera {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.boton-en {
+    border-radius: 10px;
+    background-color: blue;
+    color:rgb(6, 238, 255);
+    font-size: 1.7em;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border:2px solid #7fb7f7;
+    margin: 5px;
+    cursor:pointer;
+    display: inline-block;
+}
+.boton-copy {
+    border-radius: 10px;
+    background-color: rgb(19, 77, 143);
+    color:rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight:1;
+    border:2px solid #7fb7f7;
+    padding: 2%;
+    margin: 5px;
+    cursor:pointer;
+}
+.target {
+    background-image: url("./target.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+.seccion {
+    width: 40%;
+    margin: 30px 0 30px 0;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+}
+ .social-icon {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 2em;
+    text-decoration: none;
+}
+/* Pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    main{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .contenido{
+        flex-direction: column;
+        padding: 5px;
+
+    }
+    .seccion{
+        width: 90%;
+        margin: 5px;
+    }
+    .boton-en {
+        font-size: 1.3em;
+        margin: auto;
+    }
+}
